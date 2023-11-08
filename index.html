@@ -7,27 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>APP - GET</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="icons/balanca.png" type="image/x-icon">
+    <link rel="icon" href="icons/balanca.png">
 </head>
 
 <body>
     <header>
-        <h1>APP GET</h1>
-        <p>Calculadora de Gasto</p>
+        <h1>APP - GET</h1>
+        <p>Calculadora do gasto energético total.</p>
     </header>
-
     <form name="frmIMC">
         <input type="number" name="txtIdade" placeholder="Idade">
-        <input type="number" name="txtPeso (Kg)" placeholder="Peso">
-        <input type="number" name="txtAltura (m)" placeholder="Altura">
-        <div class="radio">
+        <input type="number" name="txtPeso" placeholder="Peso (Kg)">
+        <input type="number" name="txtAltura" placeholder="Altura (m)">
+        <div class="Radio">
             <p>Sexo:</p>
-            <input type="radio" name="grupo" id="m"><span class="sexo">Masculino</span>
-            <input type="radio" name="grupo" id="f"><span class="sexo">Feminino</span>
+            <input type="radio" name="grupo" id="m"><span class="Sexo">Masculino</span>
+            <input type="radio" name="grupo" id="f"><span class="Sexo">Feminino</span>
         </div>
         <select name="nivel" id="atividade">
             <option value="" selected>Selecione o nível de atividade física: </option>
-            <option value="1.2">Sedentário (trabalho de escritório)</option>
+            <option value="1.2">Sedentário</option>
             <option value="1.375">Exercício leve (1-2 dias/semana)</option>
             <option value="1.55">Exercício moderado (3-5 dias/semana)</option>
             <option value="1.725">Exercício pesado (6-7 dias/semana)</option>
@@ -37,24 +36,23 @@
         <input type="button" value="Calcular" onclick="calcular()">
         <input type="reset" value="Limpar" onclick="limpar()">
     </form>
+
     <!-- Info (IMC e FCM)-->
-    <div class="info">
-    <div class="peso">
-        <img src="icons/reset.png" alt="marcador IMC" id="grafico">
-        <h3 id="imc"></h3>
-        <h4 id="status"></h4>
-    </div>
-    <!-- Coração -->
-    
-    <div class="fcm">
-        <div class="coracao">
-            <div class="quadrado"></div>
-            <div class="circulo top"></div>
-            <div class="circulo left"></div>
-            
+    <div class="Info">
+        <div class="Peso">
+            <img src="icons/reset.png" alt="marcador IMC" id="grafico">
+            <h3 id="imc"></h3>
+            <h4 id="status"></h4>
         </div>
-        <h3 id="freq">FCM</h3>
-    </div>
+        <!-- Coração -->
+        <div class="Fcm">
+            <div class="Coracao">
+                <div class="Quadrado"></div>
+                <div class="Circulo Top"></div>
+                <div class="Circulo Left"></div>
+            </div>
+            <h3 id="freq">FCM</h3>
+        </div>
     </div>
     <hr>
     <h3>Calorias necessárias por dia:</h3>

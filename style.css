@@ -1,60 +1,58 @@
-/*Importacao de fonte */
+/* Importação de fonte */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-/* CSS reset do navegador*/
-/* * significa alteracao no corpo inteiro */
-*{
+/* CSS Reset */
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
-    font-family: 'josefin-sans' sans-serif;
     font-size: 1em;
     text-align: center;
 }
 
-/* cabecalho */
-header{
-    margin: 25px 0px 25px 0px; /* top rigth bottom left */
+/* Cabeçalho */
+header {
+    margin: 25px 0px 25px 0px;
+    /* top right botton left */
 }
 
-header h1{
+header h1 {
     font-size: 2.5em;
-    color: #d72616;
+    color: #cc470d;
 }
 
-/*formulario*/
-input[type=number]{
+/* Formulário */
+input[type=number] {
     width: 90px;
     padding: 8px;
     border-radius: 5px;
-    border: 1px solid #db9a95;
+    border: 1px solid #cc470d;
 }
 
-input[type=number]::-webkit-inner-spin-button {         /* retirar as setinhas o input number do chrome */
+input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
-input[type=number] {             /* retirar as setinhas o input number fire fox*/
-
+input[type=number] {
     -moz-appearance: textfield;
     appearance: textfield;
 }
 
-.radio{
+.Radio {
     display: flex;
     justify-content: center;
     margin: 25px 0px 25px 0px;
 }
 
-.radio p{
-    padding-right: 15px;
+.Radio p {
+    padding-right: 25px;
     font-weight: 700;
 }
 
-.sexo{
+.Sexo {
     padding: 0px 20px 0px 5px;
 }
 
@@ -62,116 +60,114 @@ input[type=number] {             /* retirar as setinhas o input number fire fox*
     margin-bottom: 25px;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #db9a95 ;
+    border: 1px solid #cc470d;
 }
 
-input[type=button]{
+input[type=button] {
     padding: 10px 25px 10px 25px;
     margin-right: 15px;
     border-radius: 25px;
     border: none;
-    background-color: #d72616;
-    color:#ffffff;
-    
-
+    background-color: #cc470d;
+    color: #fff;
 }
 
-input[type=reset]{
+input[type=reset] {
     padding: 10px 25px 10px 25px;
-    margin-right: 15px;
     border-radius: 25px;
     border: none;
-    background-color: #000000;
-    color:#ffffff;
-    
-    
-
+    background-color: #000;
+    color: #fff;
 }
 
-.info{
+/** Info IMC e FCM **/
+.Info {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 25px 0px 10px 25px;
-    
+    margin: 25px 0px 25px 0px;
 }
 
-.fcm{
-    display: flex;
-    justify-content: center;
+.Peso {
     text-align: center;
 }
 
-/*calorias*/
-#calorias{
+.Fcm {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 35px;
+}
+
+/** Calorias **/
+#calorias {
     font-size: 2em;
     font-weight: 700;
-    color: #d72616;
+    color: #cc470d;
 }
 
-/* coracao pulsando */
 
-.coracao{
+/*** Coração pulsando ***/
+.Coracao {
     width: 50px;
     height: 50px;
-    /* border: 1px solid red; */
-    position: relative; /*relative = Pai*/
+    /* border: 1px solid #00ff00;*/
+    position: relative;
     transform: rotate(-135deg);
-    margin-left: 50px; /* margin a esquerda entre o outro elemento*/
+    margin-left: 40px;
     animation: pulsar 0.7s infinite alternate;
     z-index: -1;
-    
 }
 
-.quadrado{
+.Quadrado {
     width: 50px;
     height: 50px;
-    /* border: 1px solid green; */
-    position:absolute; /*absolute = Filho*/
-    background-color: #d72616;
+    position: absolute;
+    background-color: #e74c3c;
 }
 
-.circulo{
+.Circulo {
     width: 50px;
     height: 50px;
-    /* border: 1px solid #231a33; */
     border-radius: 50px;
-    position:absolute; /*absolute = Filho*/
-    background-color: #d72616;
+    position: absolute;
+    background-color: #e74c3c;
 }
 
-.top{
+.Top {
     top: 50%;
 }
 
-.left{
+.Left {
     left: 50%;
 }
 
-#freq{
+#freq {
     position: absolute;
     padding-left: 40px;
     color: #fff;
 }
 
-/*animacao com CSS */
+/* Animação com CSS */
 @keyframes pulsar {
     0% {
         transform: scale(0.95) rotate(-135deg);
     }
+
     100% {
         transform: scale(1.15) rotate(-135deg);
     }
 }
 
+/* rotacionar tela */
 @media screen and (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
     html {
-      transform: rotate(-90deg);
-      transform-origin: left top;
-      width: 100vh;
-      overflow-x: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        width: 100vh;
+        overflow-x: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
     }
-  }
+}
