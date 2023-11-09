@@ -1,7 +1,6 @@
 /**
  * APP Health
  * @author Julia Picole Turubia
- * https://
  */
 
 // imc (índice de massa corporal)
