@@ -1,6 +1,6 @@
 /**
  * APP Health
- * @author Weslley Carlos
+ * @author Julia Picole Turubia
  * https://
  */
 
