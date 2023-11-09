@@ -1,7 +1,10 @@
 /**
  * APP Health
  * @author Julia Picole Turubia
+<<<<<<< HEAD
  * 
+=======
+>>>>>>> a7afa40b7d584a27dec1515888e74d59fd58296f
  */
 
 
